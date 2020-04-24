@@ -2,6 +2,12 @@ settings:
     interval_secs: 2
     iterations: 15
     timestamp_format: 'YYYY-MM-DD HH:NN:SS'
+    destination: screen
+available_destinations:
+    - screen:
+    - mqtt:
+        port: 9999
+        queue: wq
 station:
     station_name: 'LoganRiverWQTest'
     sensors:

@@ -34,7 +34,7 @@ class Sensor:
             direction = -1 * self._last_direction
         if (self.reading + (step * direction) > self._max) or (self.reading + (step * direction) < self._min):
             direction = -1 * direction
-        reading = self.reading + (step * direction)
+        reading = round(self.reading + (step * direction),self._dp)
         self.reading = reading
         self._last_direction = direction
         return reading
