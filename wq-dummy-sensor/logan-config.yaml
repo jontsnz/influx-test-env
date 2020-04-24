@@ -1,0 +1,20 @@
+settings:
+    interval_secs: 10
+    iterations: 15
+    timestamp_format: 'YYYY-MM-DD HH:NN:SS'
+station:
+    station_name: 'LoganRiverWQTest'
+    sensors:
+        - EXO_TempC:
+            min: 0
+            max: 40
+            start: 24.212
+            dp: 3
+            max_step: 0.1
+        - LoggerBattV:
+            min: 8
+            max: 16
+            start: 12.73
+            dp: 2
+            max_step: 0.2
+    
