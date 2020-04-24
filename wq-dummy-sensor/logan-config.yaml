@@ -1,5 +1,5 @@
 settings:
-    interval_secs: 10
+    interval_secs: 2
     iterations: 15
     timestamp_format: 'YYYY-MM-DD HH:NN:SS'
 station:
