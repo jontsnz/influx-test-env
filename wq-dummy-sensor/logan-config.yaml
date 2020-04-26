@@ -1,6 +1,6 @@
 settings:
     interval_secs: 2
-    iterations: 15
+    iterations: 5
     timestamp_format: 'YYYY-MM-DD HH:NN:SS'
     destination: screen
 available_destinations:
