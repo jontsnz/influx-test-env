@@ -10,6 +10,7 @@ import time
 from datetime import datetime
 from abc import ABC, abstractmethod
 import csv
+import json
 
 class ReadingsOutputter(ABC):
 
@@ -17,13 +18,13 @@ class ReadingsOutputter(ABC):
     def output(self, readings):
         pass
 
-class ScreenOutputter(ReadingsOutputter):
+class ScreenJsonOutputter(ReadingsOutputter):
 
     def __init__(self):
         super().__init__()
     
     def output(self, readings):
-        print(readings)
+        print(json.dumps(dict(readings)))
 
 class CSVOutputter(ReadingsOutputter):
 
@@ -105,7 +106,7 @@ def main(arguments):
         print('Sending output to file %s' % args.outputfile)
         outputter = CSVOutputter(args.outputfile)
     else:
-        outputter = ScreenOutputter()
+        outputter = ScreenJsonOutputter()
 
     if config:
         generate_readings(config, outputter)
