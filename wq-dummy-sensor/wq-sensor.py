@@ -78,7 +78,7 @@ def generate_readings(config, outputter):
     cnt = 0
     while (cnt < max_iterations) or (max_iterations == -1):
         cnt += 1
-        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        timestamp = datetime.now().strftime(config['settings']['timestamp_format'])
         readings = [('TIMESTAMP', timestamp),('RECORD', cnt),('Station', station.station_name)]
         readings.extend([(s.name, s.generate_reading()) for s in station.sensors])
         outputter.output(readings)
