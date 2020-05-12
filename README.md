@@ -12,7 +12,7 @@ You will need docker and docker-compose installed.
 
 ### Installing
 
-Use docker-compose to start the datbase running:
+Use docker-compose to start the database running:
 
 ```bash
 docker-compose up -d
@@ -43,7 +43,7 @@ You can test that you have set things up correctly by viewing the API tokens and
 influx auth list
 
 # list organisations
-influx irg list
+influx org list
 ```
 
 ### Login and use system
