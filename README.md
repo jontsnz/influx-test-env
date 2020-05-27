@@ -18,6 +18,12 @@ Use docker-compose to start the database running:
 docker-compose up -d
 ```
 
+For Windows, try:
+
+```bash
+docker-compose -f docker-compose-win.yml up -d
+```
+
 ### Initial setup
 
 There are two steps to get the initial database setup. First run a shell in the docker container:
