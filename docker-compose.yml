@@ -8,6 +8,7 @@ services:
             - influxdb-storage:/root/.influxdbv2
         command:
             - --reporting-disabled
+        restart: always
 
 volumes:
     influxdb-storage:
