@@ -4,7 +4,7 @@ Setup a test environment running InfluxDB so that we can ingest some dummy water
 
 ## Getting Started
 
-For this project we are using InfluxDB 2.0 Beta.
+For this project we are using InfluxDB 2.2
 
 ### Prerequisites
 
@@ -54,4 +54,4 @@ influx org list
 
 ### Login and use system
 
-Login to the InfluxDB portal at [https://localhost:9999](https://localhost:9999)
+Login to the InfluxDB portal at [https://localhost:8086](https://localhost:8086)
